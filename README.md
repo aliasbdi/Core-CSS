@@ -1,7 +1,7 @@
 Core-CSS
 ========
 
-A core set of CSS styles used to make common style definitions easier in HTML.
+A core set of commonly used CSS styles to make styling easier in HTML.
 
 The Core CSS stylesheet includes an HTML5 reset (from Eric Meyer, http://meyerweb.com) to assure all Core CSS works properly. If you prefer to use your own reset, please be aware of inconsistencies.
 
