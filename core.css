@@ -1,7 +1,7 @@
 /* 
     Title: Core CSS
     Author: Jacob Abshire http://www.jacobabshire.com
-    Version: 1.1
+    Version: 1.2
     Licensed under the MIT license
 */
 
@@ -15,4 +15,23 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 /* CORE > POSITIONING
 /* ======================================================= */
 
-.block{display:block}.inline{display:inline}.table{display:table}.table-row{display:table-row}.table-cell{display:table-cell}.hide{display:none;visibility:hidden}.relative{position:relative}.absolute{position:absolute}.floatleft{float:left}.floatright{float:right}.clearleft{clear:left}.clearright{clear:right}.clear{clear:both}.padding{padding:15px}.paddingtop{padding-top:15px}.paddingleft{padding-left:15px}.paddingbottom{padding-bottom:15px}.paddingright{padding-right:15px}.x-padding{padding:35px}.x-paddingtop{padding-top:35px}.x-paddingleft{padding-left:35px}.x-paddingbottom{padding-bottom:35px}.x-paddingright{padding-right:35px}.nopadding{padding:0 !important}.nopaddingtop{padding-top:0 !important}.nopaddingleft{padding-left:0 !important}.nopaddingbottom{padding-bottom:0 !important}.nopaddingright{padding-right:0 !important}.margin{margin:15px}.margintop{margin-top:15px}.marginleft{margin-left:15px}.marginbottom{margin-bottom:15px}.marginright{margin-right:15px}.marginnone{margin:0 !important}.nomargintop{margin-top:0 !important}.nomarginleft{margin-left:0 !important}.nomarginbottom{margin-bottom:0 !important}.nomarginright{margin-right:0 !important}.left{text-align:left !important}.right{text-align:right !important}.center{text-align:center !important}.uppercase{text-transform:uppercase}.lowercase{text-transform:lowercase}.caps{text-transform:capitalize}.normalcaps{text-transform:none}.bold{font-weight:900}.nobold{font-weight:300}.middle{vertical-align:middle}.bottom{vertical-align:bottom}.top{vertical-align:top}.baseline{vertical-align:baseline}
+.block{display:block}.inline{display:inline}.table{display:table}.table-row{display:table-row}.table-cell{display:table-cell}.hide{display:none;visibility:hidden}.relative{position:relative}.absolute{position:absolute}.floatleft{float:left}.floatright{float:right}.clearleft{clear:left}.clearright{clear:right}.clear{clear:both}.padding{padding:10px}.paddingtop{padding-top:10px}.paddingleft{padding-left:10px}.paddingbottom{padding-bottom:10px}.paddingright{padding-right:10px}.x-padding{padding:20px}.x-paddingtop{padding-top:20px}.x-paddingleft{padding-left:20px}.x-paddingbottom{padding-bottom:20px}.x-paddingright{padding-right:20px}.nopadding{padding:0 !important}.nopaddingtop{padding-top:0 !important}.nopaddingleft{padding-left:0 !important}.nopaddingbottom{padding-bottom:0 !important}.nopaddingright{padding-right:0 !important}.margin{margin:10px}.margintop{margin-top:10px}.marginleft{margin-left:10px}.marginbottom{margin-bottom:10px}.marginright{margin-right:10px}.marginnone{margin:0 !important}.nomargintop{margin-top:0 !important}.nomarginleft{margin-left:0 !important}.nomarginbottom{margin-bottom:0 !important}.nomarginright{margin-right:0 !important}.left{text-align:left !important}.right{text-align:right !important}.center{text-align:center !important}.uppercase{text-transform:uppercase}.lowercase{text-transform:lowercase}.caps{text-transform:capitalize}.normalcaps{text-transform:none}.bold{font-weight:900}.nobold{font-weight:300}.middle{vertical-align:middle}.bottom{vertical-align:bottom}.top{vertical-align:top}.baseline{vertical-align:baseline}
+
+/* =======================================================
+/* CORE > WRAPPER
+/* ======================================================= */
+
+.wrapper{width:100%;max-width:1200px;margin:0 auto}
+@media screen and (max-width:1200px){ .wrapper{max-width:1000px} }
+@media screen and (max-width:1024px){ .wrapper{max-width:740px} }
+@media screen and (max-width:750px){ .wrapper{max-width:470px} }
+
+/* =======================================================
+/* CORE > COLUMNS
+/* ======================================================= */
+
+.column{float:left}.column.one-half{width:50%}.column.one-third{width:33.3%}.column.two-third{width:66.6%}.column.one-fourth{width:25%}.column.two-fourth{width:50%}.column.three-fourth{width:75%}.column.one-fifth{width:20%}.column.two-fifth{width:40%}.column.three-fifth{width:60%}.column.four-fifth{width:80%}.column.one-sixth{width:16.6%}.column.two-sixth{width:33.2%}.column.three-sixth{width:49.8%}.column.four-sixth{width:66.4%}.column.five-sixth{width:83%}.column.one-seventh{width:14.2%}.column.two-seventh{width:28.4%}.column.three-seventh{width:42.6%}.column.four-seventh{width:56.8%}.column.five-seventh{width:71%}.column.six-seventh{width:85.2%}
+
+@media screen and (max-width:750px){ 
+	.column{float:none;clear:both}.column.one-half,.column.one-third,.column.two-third,.column.one-fourth,.column.two-fourth,.column.three-fourth,.column.one-fifth,.column.two-fifth,.column.three-fifth,.column.four-fifth,.column.one-sixth,.column.two-sixth,.column.three-sixth,.column.four-sixth,.column.five-sixth,.column.one-seventh,.column.two-seventh,.column.three-seventh,.column.four-seventh,.column.five-seventh,.column.six-seventh{width:100%}
+}

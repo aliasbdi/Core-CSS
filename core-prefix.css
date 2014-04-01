@@ -1,7 +1,7 @@
 /* 
     Title: Core CSS
     Author: Jacob Abshire http://www.jacobabshire.com
-    Version: 1.1
+    Version: 1.2
     Licensed under the MIT license
 */
 
@@ -12,7 +12,26 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}sup{vertical-align:super;}sub{vertical-align:sub;}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
 
 /* =======================================================
-/* CORE > POSITIONING
+/* CORE > COMMON
 /* ======================================================= */
 
-.cc-block{display:block}.cc-inline{display:inline}.cc-table{display:table}.cc-table-row{display:table-row}.cc-table-cell{display:table-cell}.cc-hide{display:none;visibility:hidden}.cc-relative{position:relative}.cc-absolute{position:absolute}.cc-floatleft{float:left}.cc-floatright{float:right}.cc-clearleft{clear:left}.cc-clearright{clear:right}.cc-clear{clear:both}.cc-padding{padding:15px}.cc-paddingtop{padding-top:15px}.cc-paddingleft{padding-left:15px}.cc-paddingbottom{padding-bottom:15px}.cc-paddingright{padding-right:15px}.cc-x-padding{padding:35px}.cc-x-paddingtop{padding-top:35px}.cc-x-paddingleft{padding-left:35px}.cc-x-paddingbottom{padding-bottom:35px}.cc-x-paddingright{padding-right:35px}.cc-nopadding{padding:0 !important}.cc-nopaddingtop{padding-top:0 !important}.cc-nopaddingleft{padding-left:0 !important}.cc-nopaddingbottom{padding-bottom:0 !important}.cc-nopaddingright{padding-right:0 !important}.cc-margin{margin:15px}.cc-margintop{margin-top:15px}.cc-marginleft{margin-left:15px}.cc-marginbottom{margin-bottom:15px}.cc-marginright{margin-right:15px}.cc-marginnone{margin:0 !important}.cc-nomargintop{margin-top:0 !important}.cc-nomarginleft{margin-left:0 !important}.cc-nomarginbottom{margin-bottom:0 !important}.cc-nomarginright{margin-right:0 !important} .cc-left{text-align:left !important}.cc-right{text-align:right !important}.cc-center{text-align:center !important}.cc-middle{vertical-align:middle}.cc-uppercase{text-transform:uppercase}.cc-lowercase{text-transform:lowercase}.cc-caps{text-transform:capitalize}.cc-normalcaps{text-transform:none}.cc-bold{font-weight:900}.cc-nobold{font-weight:300}.cc-bottom{vertical-align:bottom}.cc-top{vertical-align:top}.cc-baseline{vertical-align:baseline}
+.core-block{display:block}.core-inline{display:inline}.core-table{display:table}.core-table-row{display:table-row}.core-table-cell{display:table-cell}.core-hide{display:none;visibility:hidden}.core-relative{position:relative}.core-absolute{position:absolute}.core-floatleft{float:left}.core-floatright{float:right}.core-clearleft{clear:left}.core-clearright{clear:right}.core-clear{clear:both}.core-padding{padding:10px}.core-paddingtop{padding-top:10px}.core-paddingleft{padding-left:10px}.core-paddingbottom{padding-bottom:10px}.core-paddingright{padding-right:10px}.core-x-padding{padding:20px}.core-x-paddingtop{padding-top:20px}.core-x-paddingleft{padding-left:20px}.core-x-paddingbottom{padding-bottom:20px}.core-x-paddingright{padding-right:20px}.core-nopadding{padding:0 !important}.core-nopaddingtop{padding-top:0 !important}.core-nopaddingleft{padding-left:0 !important}.core-nopaddingbottom{padding-bottom:0 !important}.core-nopaddingright{padding-right:0 !important}.core-margin{margin:10px}.core-margintop{margin-top:10px}.core-marginleft{margin-left:10px}.core-marginbottom{margin-bottom:10px}.core-marginright{margin-right:10px}.core-marginnone{margin:0 !important}.core-nomargintop{margin-top:0 !important}.core-nomarginleft{margin-left:0 !important}.core-nomarginbottom{margin-bottom:0 !important}.core-nomarginright{margin-right:0 !important} .core-left{text-align:left !important}.core-right{text-align:right !important}.core-center{text-align:center !important}.core-middle{vertical-align:middle}.core-uppercase{text-transform:uppercase}.core-lowercase{text-transform:lowercase}.core-caps{text-transform:capitalize}.core-normalcaps{text-transform:none}.core-bold{font-weight:900}.core-nobold{font-weight:300}.core-bottom{vertical-align:bottom}.core-top{vertical-align:top}.core-baseline{vertical-align:baseline}
+
+/* =======================================================
+/* CORE > WRAPPER
+/* ======================================================= */
+
+.core-wrapper{width:100%;max-width:1200px;margin:0 auto}
+@media screen and (max-width:1200px){ .core-wrapper{max-width:1000px} }
+@media screen and (max-width:1024px){ .core-wrapper{max-width:740px} }
+@media screen and (max-width:750px){ .core-wrapper{max-width:470px} }
+
+/* =======================================================
+/* CORE > COLUMNS
+/* ======================================================= */
+
+.core-column{float:left}.core-column.one-half{width:50%}.core-column.one-third{width:33.3%}.core-column.two-third{width:66.6%}.core-column.one-fourth{width:25%}.core-column.two-fourth{width:50%}.core-column.three-fourth{width:75%}.core-column.one-fifth{width:20%}.core-column.two-fifth{width:40%}.core-column.three-fifth{width:60%}.core-column.four-fifth{width:80%}.core-column.one-sixth{width:16.6%}.core-column.two-sixth{width:33.2%}.core-column.three-sixth{width:49.8%}.core-column.four-sixth{width:66.4%}.core-column.five-sixth{width:83%}.core-column.one-seventh{width:14.2%}.core-column.two-seventh{width:28.4%}.core-column.three-seventh{width:42.6%}.core-column.four-seventh{width:56.8%}.core-column.five-seventh{width:71%}.core-column.six-seventh{width:85.2%}
+
+@media screen and (max-width:750px){ 
+	.core-column{float:none;clear:both}.core-column.one-half,.core-column.one-third,.core-column.two-third,.core-column.one-fourth,.core-column.two-fourth,.core-column.three-fourth,.core-column.one-fifth,.core-column.two-fifth,.core-column.three-fifth,.core-column.four-fifth,.core-column.one-sixth,.core-column.two-sixth,.core-column.three-sixth,.core-column.four-sixth,.core-column.five-sixth,.core-column.one-seventh,.core-column.two-seventh,.core-column.three-seventh,.core-column.four-seventh,.core-column.five-seventh,.core-column.six-seventh{width:100%}
+}
